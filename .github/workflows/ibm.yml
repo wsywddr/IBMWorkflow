@@ -26,7 +26,7 @@ jobs:
         IBM_ACCOUNT: ${{ secrets.IBM_ACCOUNT }}
         IBM_PASSWORD: ${{ secrets.IBM_PASSWORD }}
       run: |
-        cf login -a https://api.jp-tok.cf.cloud.ibm.com -u $IBM_ACCOUNT << EOF
+        cf login -a https://api.us-south.cf.cloud.ibm.com -u $IBM_ACCOUNT << EOF
         $IBM_PASSWORD
         EOF
     - name: Get IBM Cloud Apps
